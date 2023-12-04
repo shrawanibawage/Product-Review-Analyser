@@ -130,7 +130,6 @@ def ask_openai(question):
 
 
 def main():
-    st.set_option('deprecation.showfileUploaderEncoding', False)
     
     with st.sidebar:
         logo = Image.open("logo.png")
