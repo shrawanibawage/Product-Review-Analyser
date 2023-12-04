@@ -1,12 +1,12 @@
 import openai
 import json
 import os
+import streamlit as st
 
 # Set your API key here
-api_key = "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"
-openai.api_key = api_key
+openai.api_key = st.secrets["api_key"]
 client = openai
-assistant_id= "asst_ZhlZA0hoMITL3K87ikt26wID"
+assistant_id = st.secrets["assistant_id"]
 
 assistant=client.beta.assistants.retrieve(assistant_id)
 
