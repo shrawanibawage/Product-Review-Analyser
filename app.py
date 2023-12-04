@@ -1,5 +1,4 @@
 import streamlit as st
-import gpt_helper
 import json
 from PIL import Image
 import logging
